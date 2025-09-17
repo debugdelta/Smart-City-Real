@@ -95,8 +95,28 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.nav-logo {
+    width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: linear-gradient(to bottom right, #1db56b, #1678e2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+}
+
 .nav-logo .logo {
-    height: 50px;
+    height: 30px;
+}
+
+.logo-text {
+  margin-left: -170px;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #1db56b, #1678e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
@@ -150,7 +170,7 @@
 .main-section h1 {
     font-size: 80px;
     font-weight: 800;
-    margin-top: 200px;
+    margin-top: 120px;
 }
 
 .main-section p {
