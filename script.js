@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ---------- Path Animation (defensive) ----------
-  const paths = ['outer-triangle', 'slash', 'right-arrow', 'left-arrow', 'inner-triangle'];
-  paths.forEach(id => {
-    const path = document.getElementById(id);
-    if (!path) return;
-    const len = path.getTotalLength();
-    path.style.strokeDasharray = len;
-    path.style.strokeDashoffset = len;
-    path.style.transition = 'stroke-dashoffset 4s ease-in-out';
-  });
-
-  // ---------- Loader hide ----------
-  const loader = document.querySelector('.loading-page');
-  if (loader) {
-    setTimeout(() => loader.classList.add('hidden'), 4500);
-  }
 
   // ---------- VanillaTilt init ----------
   if (typeof VanillaTilt !== 'undefined') {

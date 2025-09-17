@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart City</title>
     <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="icon.svg" type="image/png">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="icon.svg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Loader -->
@@ -23,15 +21,10 @@
                 </linearGradient>
             </defs>
             <g transform="translate(0.000000,147.000000) scale(0.100000,-0.100000)" stroke="url(#gradient)" fill="none">
-                
                 <path id="outer-triangle" d="M1468 1333 c-9 -10 -37 -58 -63 -108 -41 -76 -91 -166 -240 -430 -12 -22 -46 -85 -75 -140 -29 -55 -94 -174 -144 -265 -125 -225 -132 -244 -102 -269 10 -8 146 -12 480 -14 l467 -3 -6 26 c-4 14 -20 49 -36 78 l-30 52 -282 1 c-155 1 -294 0 -309 -1 -14 -1 -29 3 -32 8 -8 13 50 129 219 437 144 263 181 325 196 325 8 0 62 -90 166 -280 98 -177 109 -198 161 -283 23 -37 42 -69 42 -71 0 -2 17 -33 39 -68 21 -35 54 -95 74 -134 19 -38 43 -76 51 -83 9 -8 39 -14 68 -14 41 -1 54 3 69 22 17 21 17 25 3 59 -14 34 -179 333 -246 445 -15 26 -28 49 -28 52 0 2 -24 48 -53 102 -30 54 -71 130 -92 168 -110 204 -200 363 -218 383 -24 26 -58 29 -79 5z"/>
-                
                 <path id="slash" d="M2327 943 c-5 -8 -65 -214 -116 -398 -40 -145 -40 -157 7 -192 20 -15 40 -32 43 -37 10 -13 14 -1 48 124 52 192 60 222 87 315 14 50 28 97 31 106 6 21 -90 99 -100 82z"/>
-               
                 <path id="right-arrow" d="M493 761 c-248 -146 -287 -172 -291 -194 -5 -26 11 -41 101 -93 167 -95 323 -188 364 -216 60 -40 73 -38 72 15 -3 100 6 92 -277 250 -29 16 -51 34 -49 40 2 6 73 52 158 102 137 80 154 93 157 119 5 42 -7 96 -21 96 -7 -1 -103 -54 -214 -119z"/>
-                
                 <path id="left-arrow" d="M2489 783 c-27 -73 -27 -74 65 -138 86 -60 100 -78 70 -89 -9 -3 -61 -36 -115 -73 -89 -59 -99 -70 -104 -102 -3 -20 -10 -53 -16 -74 -6 -22 -8 -41 -6 -44 3 -2 27 12 55 31 27 20 53 36 57 36 4 0 25 13 48 29 23 16 101 67 173 114 72 47 135 90 138 96 4 6 3 18 -2 28 -10 16 -326 213 -343 213 -5 0 -14 -12 -20 -27z"/>
-                
                 <path id="inner-triangle" d="M1441 612 c-22 -43 -54 -103 -71 -133 -47 -79 -43 -81 135 -80 83 1 154 6 159 11 4 4 -24 68 -65 144 -92 170 -100 173 -158 58z"/>
             </g>
         </svg>
@@ -40,15 +33,19 @@
             <div class="logo-name">Debug Delta</div>
         </div>
     </div> 
-                 
 
     <!-- Navbar Section -->
     <nav class="navbar">
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="nav-logo">
             <img src="icon.svg" alt="Logo" class="logo">
         </div>
-      <div class="logo-text">Smart City</div>
-      
+        <div class="logo-text">Smart City</div>
+        <div class="nav-buttons">
+            <button class="signup-btn">Login/Sign Up</button>
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#exploration">Exploration</a></li>
@@ -56,9 +53,6 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#maintenance">Maintenance</a></li>
         </ul>
-        <div class="nav-buttons">
-            <button class="signup-btn">Login/Sign Up</button>
-        </div>
     </nav>
 
     <!-- Main Section -->
@@ -68,180 +62,138 @@
     </section>
 
     <!-- News Section with Scroll Animation -->
-  <section class="news-section">
-    <div class="news-box">
-      <div class="news-title">News:</div>
-      <div class="news-display" id="newsDisplay">
-        <div class="news-item">New Feature Update Released!</div>
-        <div class="news-item">Security Patch v2.1 Now Live</div>
-        <div class="news-item">Join Our Education Webinar</div>
-        <div class="news-item">Maintenance Schedule Announced</div>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const items = document.querySelectorAll(".news-item");
-    let index = 0;
-
-    function showNextNews() {
-      items.forEach((item, i) => {
-        item.classList.remove("active");
-      });
-
-      items[index].classList.add("active");
-      index = (index + 1) % items.length;
-    }
-
-    // Initial display
-    showNextNews();
-    setInterval(showNextNews, 3000); // Change every 3 seconds
-  </script>
-
-
-  <!-- Official Messages Section -->
-  <section class="messages-section">
-    <h2><span class="Official-msg-h2">Official</span> Messages</h2>
-    <div class="messages-container">
-
-      <div class="message-box">
-        <div class="icon"><i class="fas fa-user-circle"></i></div>
-        <h3 class="name">System Team</h3>
-        <p class="role">Admin</p>
-        <p class="msg">System Update: New features added for better user experience.</p>
-        <button class="read-more">Read More</button>
-      </div>
-
-      <div class="message-box middle">
-        <div class="icon"><i class="fas fa-user-circle"></i></div>
-        <h3 class="name">Security Team</h3>
-        <p class="role">Moderator</p>
-        <p class="msg">Security Alert: Ensure your account is protected.</p>
-        <button class="read-more">Read More</button>
-      </div>
-
-      <div class="message-box">
-        <div class="icon"><i class="fas fa-user-circle"></i></div>
-        <h3 class="name">Support Team</h3>
-        <p class="role">Staff</p>
-        <p class="msg">Maintenance: Scheduled downtime on Sunday.</p>
-        <button class="read-more">Read More</button>
-      </div>
-
-    </div>
-  </section>
-
-
-
-  <!-- Of things Explore Section -->
-  <section class="explore-section">
-    <h2><span class="blue-text">Of things</span> Explore</h2>
-
-    <div class="explore-tabs">
-      <button class="tab-btn active" onclick="showTab('academic')">Academic Overview</button>
-      <button class="tab-btn" onclick="showTab('infrastructure')">Infrastructure</button>
-      <button class="tab-btn" onclick="showTab('activities')">Activities</button>
-      <button class="tab-btn" onclick="showTab('initiative')">Initiative</button>
-    </div>
-
-    <div class="explore-content">
-      <div id="academic" class="tab-content active">
-
-        <!-- Box 1 -->
-        <div class="access-box">
-          <div class="icon">
-            <!-- Calendar SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 
-            0-2 .9-2 2v14c0 1.1.9 2 2 
-            2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
-            16H5V9h14v11z"/></svg>
-          </div>
-          <div class="text">
-            <h3>Academic planner</h3>
-            <p>Academic Calendar Activities 2024-25th by Theme</p>
-          </div>
+    <section class="news-section">
+        <div class="news-box">
+            <div class="news-title">News:</div>
+            <div class="news-display" id="newsDisplay">
+                <div class="news-item">New Feature Update Released!</div>
+                <div class="news-item">Security Patch v2.1 Now Live</div>
+                <div class="news-item">Join Our Education Webinar</div>
+                <div class="news-item">Maintenance Schedule Announced</div>
+            </div>
         </div>
+    </section>
 
-        <!-- Box 2 -->
-        <div class="access-box">
-          <div class="icon">
-            <!-- Chart SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 
-            0h2V7H7v10zm4 0h2v-4h-2v4zm4 
-            0h2v-2h-2v2zm4 0h2V4h-2v13z"/></svg>
-          </div>
-          <div class="text">
-            <h3>Educational results</h3>
-            <p>Academic result of the school</p>
-          </div>
+    <script>
+        const items = document.querySelectorAll(".news-item");
+        let index = 0;
+
+        function showNextNews() {
+            items.forEach((item, i) => {
+                item.classList.remove("active");
+            });
+
+            items[index].classList.add("active");
+            index = (index + 1) % items.length;
+        }
+
+        // Initial display
+        showNextNews();
+        setInterval(showNextNews, 3000); // Change every 3 seconds
+
+        // Navbar toggle functionality
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.querySelector('.nav-buttons').classList.toggle('active');
+        });
+    </script>
+
+    <!-- Official Messages Section -->
+    <section class="messages-section">
+        <h2><span class="Official-msg-h2">Official</span> Messages</h2>
+        <div class="messages-container">
+            <div class="message-box">
+                <div class="icon"><i class="fas fa-user-circle"></i></div>
+                <h3 class="name">System Team</h3>
+                <p class="role">Admin</p>
+                <p class="msg">System Update: New features added for better user experience.</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="message-box middle">
+                <div class="icon"><i class="fas fa-user-circle"></i></div>
+                <h3 class="name">Security Team</h3>
+                <p class="role">Moderator</p>
+                <p class="msg">Security Alert: Ensure your account is protected.</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="message-box">
+                <div class="icon"><i class="fas fa-user-circle"></i></div>
+                <h3 class="name">Support Team</h3>
+                <p class="role">Staff</p>
+                <p class="msg">Maintenance: Scheduled downtime on Sunday.</p>
+                <button class="read-more">Read More</button>
+            </div>
         </div>
+    </section>
 
-        <!-- Box 3 -->
-        <div class="access-box">
-          <div class="icon">
-            <!-- Children SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6" viewBox="0 0 24 24"><path d="M12 
-            12c2.21 0 4-1.79 
-            4-4s-1.79-4-4-4-4 1.79-4 4 
-            1.79 4 4 4zm0 2c-2.67 
-            0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-          </div>
-          <div class="text">
-            <h3>Children's garden</h3>
-            <p>Balvatika-3 is running in the school</p>
-          </div>
+    <!-- Of things Explore Section -->
+    <section class="explore-section">
+        <h2><span class="blue-text">Of things</span> Explore</h2>
+        <div class="explore-tabs">
+            <button class="tab-btn active" onclick="showTab('academic')">Academic Overview</button>
+            <button class="tab-btn" onclick="showTab('infrastructure')">Infrastructure</button>
+            <button class="tab-btn" onclick="showTab('activities')">Activities</button>
+            <button class="tab-btn" onclick="showTab('initiative')">Initiative</button>
         </div>
-
-        <!-- Box 4 -->
-        <div class="access-box">
-          <div class="icon">
-            <!-- Calendar SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 
-            0-2 .9-2 2v14c0 1.1.9 2 2 
-            2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 
-            16H5V9h14v11z"/></svg>
-          </div>
-          <div class="text">
-            <h3>Academic planner</h3>
-            <p>Academic Calendar Activities 2024-25th by Theme</p>
-          </div>
+        <div class="explore-content">
+            <div id="academic" class="tab-content active">
+                <div class="access-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h3>Academic planner</h3>
+                        <p>Academic Calendar Activities 2024-25th by Theme</p>
+                    </div>
+                </div>
+                <div class="access-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h3>Educational results</h3>
+                        <p>Academic result of the school</p>
+                    </div>
+                </div>
+                <div class="access-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h3>Children's garden</h3>
+                        <p>Balvatika-3 is running in the school</p>
+                    </div>
+                </div>
+                <div class="access-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#2563EB" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h3>Academic planner</h3>
+                        <p>Academic Calendar Activities 2024-25th by Theme</p>
+                    </div>
+                </div>
+                <div class="access-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2zm4 0h2V4h-2v13z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h3>Educational results</h3>
+                        <p>Academic result of the school</p>
+                    </div>
+                </div>
+                <div class="access-box">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h3>Children's garden</h3>
+                        <p>Balvatika-3 is running in the school</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Box 5 -->
-        <div class="access-box">
-          <div class="icon">
-            <!-- Chart SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#059669" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 
-            0h2V7H7v10zm4 0h2v-4h-2v4zm4 
-            0h2v-2h-2v2zm4 0h2V4h-2v13z"/></svg>
-          </div>
-          <div class="text">
-            <h3>Educational results</h3>
-            <p>Academic result of the school</p>
-          </div>
-        </div>
-
-        <!-- Box 6 -->
-        <div class="access-box">
-          <div class="icon">
-            <!-- Children SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3B82F6" viewBox="0 0 24 24"><path d="M12 
-            12c2.21 0 4-1.79 
-            4-4s-1.79-4-4-4-4 1.79-4 4 
-            1.79 4 4 4zm0 2c-2.67 
-            0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-          </div>
-          <div class="text">
-            <h3>Children's garden</h3>
-            <p>Balvatika-3 is running in the school</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-
+    </section>
 
     <!-- Stats Section -->
     <section class="stats-section">
@@ -250,57 +202,53 @@
     </section>
 
     <!-- Feedback Section with Animation -->
-  <section class="feedback-section">
-      <h2><span class="Feedback-h2">User</span> Feedback</h2>
-      <div class="feedback-container-wrapper">
-          <div class="feedback-container">
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-
-                  <h3>User A</h3>
-                  <p>"Great platform, very intuitive!"</p>
-              </div>
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User B</h3>
-                  <p>"Security features are top-notch."</p>
-              </div>
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User C</h3>
-                  <p>"Learning resources are amazing!"</p>
-              </div>
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User D</h3>
-                  <p>"Maintenance tools saved us time."</p>
-              </div>
-
-              <!-- Duplicate for smooth infinite scroll -->
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User A</h3>
-                  <p>"Great platform, very intuitive!"</p>
-              </div>
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User B</h3>
-                  <p>"Security features are top-notch."</p>
-              </div>
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User C</h3>
-                  <p>"Learning resources are amazing!"</p>
-              </div>
-              <div class="feedback-item">
-                <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
-                  <h3>User D</h3>
-                  <p>"Maintenance tools saved us time."</p>
-              </div>
-          </div>
-      </div>
-  </section>
-
+    <section class="feedback-section">
+        <h2><span class="Feedback-h2">User</span> Feedback</h2>
+        <div class="feedback-container-wrapper">
+            <div class="feedback-container">
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User A</h3>
+                    <p>"Great platform, very intuitive!"</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User B</h3>
+                    <p>"Security features are top-notch."</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User C</h3>
+                    <p>"Learning resources are amazing!"</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User D</h3>
+                    <p>"Maintenance tools saved us time."</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User A</h3>
+                    <p>"Great platform, very intuitive!"</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User B</h3>
+                    <p>"Security features are top-notch."</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User C</h3>
+                    <p>"Learning resources are amazing!"</p>
+                </div>
+                <div class="feedback-item">
+                    <div class="icon-feedback"><i class="fas fa-user-circle"></i></div>
+                    <h3>User D</h3>
+                    <p>"Maintenance tools saved us time."</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact-section">
@@ -310,43 +258,32 @@
                 <h3>Embed</h3>
                 <!-- Left blank for user content -->
             </div>
-          <div class="contact-box">
-            <h3>Feedback</h3>
-            <input type="text" class="name-input" placeholder="Your name" />
-            <textarea placeholder="Your feedback"></textarea>
-            <button class="post-btn">Post</button>
-          </div>
-
+            <div class="contact-box">
+                <h3>Feedback</h3>
+                <input type="text" class="name-input" placeholder="Your name" />
+                <textarea placeholder="Your feedback"></textarea>
+                <button class="post-btn">Post</button>
+            </div>
         </div>
     </section>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <!-- Footer Navigation Links -->
-      <ul class="footer-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Exploration</a></li>
-        <li><a href="#services">Security</a></li>
-        <li><a href="#contact">Education</a></li>
-        <li><a href="#contact">Maintenance</a></li>
-      </ul>
-
-      <!-- Made by Debug Delta -->
-      <p class="madeby">Made by <span>Debug Delta</span></p>
-
-      <!-- Logo -->
-      <div class="footer-logo">
-        <img src="logo.svg" alt="Debug Delta Logo" />
-      </div>
-
-      <!-- Copyright -->
-      <p class="footer-copy">© 2024 Your Company, Inc. All rights reserved.</p>
-    </div>
-  </footer>
-
-
-  
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Exploration</a></li>
+                <li><a href="#services">Security</a></li>
+                <li><a href="#contact">Education</a></li>
+                <li><a href="#contact">Maintenance</a></li>
+            </ul>
+            <p class="madeby">Made by <span>Debug Delta</span></p>
+            <div class="footer-logo">
+                <img src="logo.svg" alt="Debug Delta Logo" />
+            </div>
+            <p class="footer-copy">© 2024 Your Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
