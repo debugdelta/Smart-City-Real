@@ -916,7 +916,7 @@
 
     .message-box.middle {
         transform: none; 
-        bottom: none;
+        bottom: 0;
     }
 
     .icon {
