@@ -10,7 +10,7 @@
 
   
   <!-- Group to scale down the path and center it -->
-  <g transform="translate(20 20) scale(0.9)">
+  <g transform="translate(12 15) scale(0.9)">
     <path 
       fill="white" 
       stroke="black" 
