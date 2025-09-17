@@ -290,7 +290,7 @@
 }
 
 .messages-container {
-  margin-top: 120px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -313,7 +313,7 @@
 }
 
 .message-box.middle {
-  bottom: 150px;
+  bottom: 100px;
 }
 
 .Official-msg-h2 {
