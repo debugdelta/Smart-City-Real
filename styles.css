@@ -144,11 +144,12 @@
     padding: 50px;
     background: linear-gradient(to right, #059669, #2563EB);
     color: white;
+    height: 90vh;
 }
 
 .main-section h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-top: 200px;
 }
 
 .main-section p {
