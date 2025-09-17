@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="logo.svg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <!-- Loader 
@@ -64,25 +66,70 @@
     </section>
 
     <!-- News Section with Scroll Animation -->
-    <section class="news-section">
-        <h2>Latest News</h2>
-        <div class="news-container">
-            <div class="news-item">New Feature Update Released!</div>
-            <div class="news-item">Security Patch v2.1 Now Live</div>
-            <div class="news-item">Join Our Education Webinar</div>
-            <div class="news-item">Maintenance Schedule Announced</div>
-        </div>
-    </section>
+  <section class="news-section">
+    <div class="news-box">
+      <div class="news-title">News:</div>
+      <div class="news-display" id="newsDisplay">
+        <div class="news-item">New Feature Update Released!</div>
+        <div class="news-item">Security Patch v2.1 Now Live</div>
+        <div class="news-item">Join Our Education Webinar</div>
+        <div class="news-item">Maintenance Schedule Announced</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Official Messages Section -->
-    <section class="messages-section">
-        <h2>Official Messages</h2>
-        <div class="messages-container">
-            <div class="message-box">System Update: New features added for better user experience.</div>
-            <div class="message-box">Security Alert: Ensure your account is protected.</div>
-            <div class="message-box">Maintenance: Scheduled downtime on Sunday.</div>
-        </div>
-    </section>
+  <script>
+    const items = document.querySelectorAll(".news-item");
+    let index = 0;
+
+    function showNextNews() {
+      items.forEach((item, i) => {
+        item.classList.remove("active");
+      });
+
+      items[index].classList.add("active");
+      index = (index + 1) % items.length;
+    }
+
+    // Initial display
+    showNextNews();
+    setInterval(showNextNews, 3000); // Change every 3 seconds
+  </script>
+
+
+  <!-- Official Messages Section -->
+  <section class="messages-section">
+    <h2>Official Messages</h2>
+    <div class="messages-container">
+
+      <div class="message-box">
+        <div class="icon"><i class="fas fa-user-circle"></i></div>
+        <h3 class="name">System Team</h3>
+        <p class="role">Admin</p>
+        <p class="msg">System Update: New features added for better user experience.</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="message-box middle">
+        <div class="icon"><i class="fas fa-user-circle"></i></div>
+        <h3 class="name">Security Team</h3>
+        <p class="role">Moderator</p>
+        <p class="msg">Security Alert: Ensure your account is protected.</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="message-box">
+        <div class="icon"><i class="fas fa-user-circle"></i></div>
+        <h3 class="name">Support Team</h3>
+        <p class="role">Staff</p>
+        <p class="msg">Maintenance: Scheduled downtime on Sunday.</p>
+        <button class="read-more">Read More</button>
+      </div>
+
+    </div>
+  </section>
+
+
 
     <!-- Quick Access Section -->
     <section class="quick-access-section">
