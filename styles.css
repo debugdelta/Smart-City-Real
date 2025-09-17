@@ -314,6 +314,7 @@
 
 .message-box.middle {
   transform: translateY(-80px);
+  position: fixed;
 }
 
 .Official-msg-h2 {
@@ -912,6 +913,10 @@
         max-width: 90%;
         padding: 12px;
         border-radius: 10px;
+    }
+
+    .message-box.middle {
+        transform: none; /* Remove offset */
     }
 
     .icon {
