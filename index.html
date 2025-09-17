@@ -38,14 +38,12 @@
     <nav class="navbar">
         <button class="nav-toggle">
             <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
         </button>
         <div class="nav-logo">
             <img src="icon.svg" alt="Logo" class="logo">
         </div>
         <div class="logo-text">Smart City</div>
-        <div class="nav-buttons">
-            <button class="signup-btn">Login/Sign Up</button>
-        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#exploration">Exploration</a></li>
@@ -53,6 +51,9 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#maintenance">Maintenance</a></li>
         </ul>
+      <div class="nav-buttons">
+          <button class="signup-btn">Login/Sign Up</button>
+      </div>
     </nav>
 
     <!-- Main Section -->
@@ -73,30 +74,6 @@
             </div>
         </div>
     </section>
-
-    <script>
-        const items = document.querySelectorAll(".news-item");
-        let index = 0;
-
-        function showNextNews() {
-            items.forEach((item, i) => {
-                item.classList.remove("active");
-            });
-
-            items[index].classList.add("active");
-            index = (index + 1) % items.length;
-        }
-
-        // Initial display
-        showNextNews();
-        setInterval(showNextNews, 3000); // Change every 3 seconds
-
-        // Navbar toggle functionality
-        document.querySelector('.nav-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-            document.querySelector('.nav-buttons').classList.toggle('active');
-        });
-    </script>
 
     <!-- Official Messages Section -->
     <section class="messages-section">

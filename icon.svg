@@ -8,6 +8,7 @@
   <!-- Outer rounded rect with radius 20 -->
   <rect width="256" height="256" rx="20" ry="20" fill="url(#grad)" />
 
+  
   <!-- Group to scale down the path and center it -->
   <g transform="translate(20 20) scale(0.9)">
     <path 
