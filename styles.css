@@ -313,8 +313,7 @@
 }
 
 .message-box.middle {
-  transform: translateY(-80px);
-  position: fixed;
+  margin-bottom: 50px;
 }
 
 .Official-msg-h2 {
