@@ -142,18 +142,31 @@
 .main-section {
     text-align: center;
     padding: 50px;
-    background: linear-gradient(to right, #059669, #2563EB);
+    background: linear-gradient(to right, #059669,#059669, #2563EB);
     color: white;
     height: 90vh;
 }
 
 .main-section h1 {
-    font-size: 48px;
+    font-size: 80px;
+    font-weight: 800;
     margin-top: 200px;
 }
 
 .main-section p {
-    font-size: 18px;
+    font-size: 74px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.main-section .description {
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 1.4;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* News Section */
