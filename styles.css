@@ -915,7 +915,8 @@
     }
 
     .message-box.middle {
-        transform: none; /* Remove offset */
+        transform: none; 
+        bottom: none;
     }
 
     .icon {
