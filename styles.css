@@ -914,10 +914,6 @@
         border-radius: 10px;
     }
 
-    .message-box.middle {
-        transform: none; /* Remove offset */
-    }
-
     .icon {
         font-size: 36px;
         margin-left: 20px;
